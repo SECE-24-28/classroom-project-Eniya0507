@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Download & User Form</title>
+</head>
+<body style="background-color: #F08080; font-family: Arial, sans-serif; padding: 20px;">
+
+<!-- HEADER -->
+<header>
+    <h1>🎬 Media Download Center</h1>
+    <nav>
+        <ul>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#audios">Audios</a></li>
+            <li><a href="#user-form">User Form</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+
+<!-- VIDEO SECTION -->
+<section id="videos">
+    <h2>Videos</h2>
+
+    <article>
+        <h3>Video 1</h3>
+        <video width="400" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser cannot play this video.
+        </video>
+        <p><a href="video.mp4" download>⬇ Download Video 1</a></p>
+    </article>
+
+    <article>
+        <h3>Video 2</h3>
+        <video width="400" controls>
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+        <p><a href="video2.mp4" download>⬇ Download Video 2</a></p>
+    </article>
+</section>
+
+<hr>
+
+<!-- AUDIO SECTION -->
+<section id="audios">
+    <h2>Audios</h2>
+
+    <article>
+        <h3>Audio 1</h3>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+        <p><a href="audio.mp3" download>⬇ Download Audio 1</a></p>
+    </article>
+
+    <article>
+        <h3>Audio 2</h3>
+        <audio controls>
+            <source src="Audio_2.mp3" type="audio/mpeg">
+        </audio>
+        <p><a href="Audio_2.mp3" download>⬇ Download Audio 2</a></p>
+    </article>
+</section>
+
+<hr>
+
+<!-- USER FORM SECTION -->
+<section id="user-form">
+    <h2>User Details Form</h2>
+    <p>Fill in your details to register or download files:</p>
+
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="website">Website URL:</label><br>
+        <input type="url" id="website" name="website" placeholder="http://www.example.com"><br><br>
+
+        <label for="color">Favorite Color:</label><br>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="file">Upload a File (optional):</label><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <label for="number">Your Number (10-100):</label><br>
+        
+        <input type="number" id="number" name="number" min="10" max="100"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<hr>
+
+<footer>
+    <p>© 2025 Media Download Center. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>
